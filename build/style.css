@@ -1,0 +1,94 @@
+body {
+  background: #f0f4f8;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.singleTodoItem {
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.singleTodoItem.completed {
+  text-decoration: line-through;
+  color: green;
+}
+
+.singleTodoItem:hover {
+  background: #f7f7f7;
+}
+
+.itemInput {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: calc(100% - 100px);
+  font-size: 16px;
+}
+
+.addItemButton {
+  background: #5d89cc;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background 0.3s ease;
+}
+
+.addItemButton:hover {
+  background: #4a6fa1;
+}
+
+.markCompleteTodoItem, .removeTodoItem {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.markCompleteTodoItem {
+  color: green;
+}
+
+.removeTodoItem {
+  color: red;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
